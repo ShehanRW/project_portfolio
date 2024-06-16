@@ -1,7 +1,7 @@
 'use client'
-import { Box, Flex, Text, Link, Menu, MenuButton, MenuList, MenuItem, Button, IconButton } from '@chakra-ui/react'
+import { Box, Flex, Text, Link as ChakraLink, Menu, MenuButton, MenuList, MenuItem, Button, IconButton } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation';
-import { GiHamburgerMenu } from "react-icons/gi";
+import Link from 'next/link';
 import React from 'react'
 
 
@@ -21,9 +21,9 @@ const HeaderAppBar = () => {
       <Flex h={'15ig'} w={'full'} bg={'brand.900'} position={'fixed'} gap={1} flex={1} >
 
         <Flex  alignItems={'center'} cursor={'pointer'} _hover={{ color: 'brand.0' }}>
-          <Link href='/' bg={'brand.50'} fontWeight={'700'} fontSize={30} p={2} style={{ textDecoration:'none' }}>
+          <ChakraLink href='/' bg={'brand.50'} fontWeight={'700'} fontSize={30} p={2} style={{ textDecoration:'none' }}>
             SW
-          </Link>
+          </ChakraLink>
         </Flex>
         
         <Flex flex={6} h={5} w={5}>
@@ -33,7 +33,7 @@ const HeaderAppBar = () => {
         <Flex flex={3} h={"15ig"} w={5} gap={2} mr={10} justifyContent={'center'} alignItems={'center'} display={{base:'none', md:'flex'}}>
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
-              <Link
+              <ChakraLink
                 color={pathname === link.href ? 'brand.50' : 'brand.0'}
                 fontWeight="500"
                 fontSize={20}
@@ -43,7 +43,7 @@ const HeaderAppBar = () => {
                 style={{ textDecoration: 'none' }}
               >
                 {link.label}
-              </Link>
+              </ChakraLink>
             </Link>
           ))}
         </Flex>
@@ -63,7 +63,7 @@ const HeaderAppBar = () => {
             <MenuItem >
               {links.map((link) => (
               <Link key={link.href} href={link.href}>
-                <Link
+                <ChakraLink
                   color={pathname === link.href ? 'brand.50' : 'brand.900'}
                   fontWeight="500"
                   fontSize={20}
@@ -73,7 +73,7 @@ const HeaderAppBar = () => {
                   style={{ textDecoration: 'none' }}
                 >
                   {link.label}
-                </Link>
+                </ChakraLink>
               </Link>))}
             </MenuItem>
           </MenuList>
