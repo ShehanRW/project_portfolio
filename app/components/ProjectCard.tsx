@@ -1,10 +1,15 @@
+'use client'
 import { Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const ProjectCard = () => {
+    const direct = ()=>{
+        window.location.href = '#';
+    };
+
     return (
         <>
-          <Flex border='2px solid #323232' _hover={{ border: '2px solid', borderColor: 'brand.400' }}>
+          <Flex border='2px solid #323232' _hover={{ border: '2px solid', borderColor: 'brand.200' }} onClick={direct}>
               <Card maxW='full' cursor={'pointer'} bg={"brand.1000"} borderRadius={0}>
                   <CardBody >
                       <Image

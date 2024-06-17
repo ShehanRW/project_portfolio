@@ -1,5 +1,4 @@
 import React from 'react'
-import Script from "next/script";
 import HeaderAppBar from '../components/HeaderAppBar'
 import { Box, Flex, Text, SimpleGrid} from '@chakra-ui/react'
 import ProjectCard from '../components/ProjectCard'
@@ -23,14 +22,14 @@ const HomePage = () => {
               </Box>
 
           </Flex>
-          <Flex m={2} w={'full'} h={620} alignItems={'center'} justifyContent={'center'} >
-            <Script type="text/javascript" src="./scripts/threeScript.js" />
+          <Flex m={2} w={'full'} h={{base:720, md:620}} alignItems={'center'} justifyContent={'center'} >
+            
           </Flex>
         </Flex>
 
-        <Flex py={10} px={10} direction={'column'}>
-          <Text fontSize={25} my={5} ml={20} color={'brand.0'}>Projects</Text>
-          <SimpleGrid columns={{base:1, md:2}} spacing={5} mx={{base:0, md:100}}  gap={2} >
+        <Flex py={10} px={{base:10, md:0}} direction={'column'}>
+          <Text fontSize={25} my={5} ml={{base:0, md:20}} color={'brand.0'}>Projects</Text>
+          <SimpleGrid columns={{base:1, md:3, sm:2}} spacing={5} mx={{base:0, md:55}}  gap={2} >
             <ProjectCard/>
             <ProjectCard/>
             <ProjectCard/>
