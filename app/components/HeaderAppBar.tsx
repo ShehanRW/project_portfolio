@@ -33,7 +33,7 @@ const HeaderAppBar = () => {
         <Flex flex={3} h={"15ig"} w={5} gap={2} mr={10} justifyContent={'center'} alignItems={'center'} display={{base:'none', md:'flex'}}>
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
-              <ChakraLink
+              <Text
                 color={pathname === link.href ? 'brand.50' : 'brand.0'}
                 fontWeight="500"
                 fontSize={20}
@@ -43,7 +43,7 @@ const HeaderAppBar = () => {
                 style={{ textDecoration: 'none' }}
               >
                 {link.label}
-              </ChakraLink>
+              </Text>
             </Link>
           ))}
         </Flex>
@@ -63,7 +63,7 @@ const HeaderAppBar = () => {
             <MenuItem >
               {links.map((link) => (
               <Link key={link.href} href={link.href}>
-                <ChakraLink
+                <Text
                   color={pathname === link.href ? 'brand.50' : 'brand.900'}
                   fontWeight="500"
                   fontSize={20}
@@ -73,7 +73,7 @@ const HeaderAppBar = () => {
                   style={{ textDecoration: 'none' }}
                 >
                   {link.label}
-                </ChakraLink>
+                </Text>
               </Link>))}
             </MenuItem>
           </MenuList>
