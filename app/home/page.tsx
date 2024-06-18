@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderAppBar from '../components/HeaderAppBar'
 import { Box, Flex, Text, SimpleGrid} from '@chakra-ui/react'
 import ProjectCard from '../components/ProjectCard'
+import ThreeScene from '../components/ThreeScene'
 
 const HomePage = () => {
   return (
@@ -22,9 +23,10 @@ const HomePage = () => {
               </Box>
 
           </Flex>
-          <Flex m={2} w={'full'} h={{base:720, md:620}} alignItems={'center'} justifyContent={'center'} >
-            
+          <Flex m={2} w={'full'} h={{base:720, md:620}} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}}>
+            <ThreeScene/>
           </Flex>
+          
         </Flex>
 
         <Flex py={10} px={{base:10, md:0}} direction={'column'}>

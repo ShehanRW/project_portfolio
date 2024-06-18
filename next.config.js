@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
-
-module.exports = {
+const nextConfig = {
+    transpilePackages: ['three'],
     async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/home',
-                permanent: true,
-            },
-        ];
+      return [
+        {
+          source: '/',
+          destination: '/home',
+          permanent: true,
+        },
+      ];
     },
-};
+  };
+  
+  module.exports = nextConfig;
+  
