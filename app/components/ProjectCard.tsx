@@ -12,12 +12,12 @@ const ProjectCard = () => {
           <Flex border='2px solid #323232' _hover={{ border: '2px solid', borderColor: 'brand.200' }} onClick={direct}>
               <Card maxW='full' cursor={'pointer'} bg={"brand.1000"} borderRadius={0}>
                   <CardBody >
-                      <Image
+                      {/* <Image
                           src='intro screen.jpg'
                           alt='Site Jotter'
                           h={300}
                           w={'full'}
-                      />
+                      /> */}
                       <Stack mt='6' spacing='3'>
                           <Heading size='md' color={"brand.100"}>Android App Site Jotter</Heading>
                           <Text color={"brand.0"}>
