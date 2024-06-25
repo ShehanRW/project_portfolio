@@ -3,6 +3,7 @@ import HeaderAppBar from '../components/HeaderAppBar'
 import { Box, Flex, Text, SimpleGrid} from '@chakra-ui/react'
 import ProjectCard from '../components/ProjectCard'
 import ThreeScene from '../components/ThreeScene'
+import Footer from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -15,7 +16,7 @@ const HomePage = () => {
           <Flex m={2} w={'full'} h={650} alignItems={'center'} justifyContent={'center'} px={10} flexDirection={'column'}>
               
               <Box py={10}>
-                <Text color={'brand.0'} fontSize={40} fontWeight={'10'} textAlign={"center"}> Desiasd asdjakw gfrajkff <br/> Make Future Better </Text>
+                <Text color={'brand.0'} fontSize={40} fontWeight={'10'} textAlign={"center"}>  <br/> Make Future Better </Text>
               </Box>
 
               <Box w={80}>
@@ -23,8 +24,8 @@ const HomePage = () => {
               </Box>
 
           </Flex>
-          <Flex m={2} w={'full'} h={{base:720, md:620}} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}}>
-            <ThreeScene/>
+          <Flex m={2} w={'full'} h={'auto'} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}} bg={'white'}>
+            
           </Flex>
           
         </Flex>
@@ -42,9 +43,7 @@ const HomePage = () => {
           </SimpleGrid>
         </Flex>
 
-        <Flex bg={"#323232"} w={'full'} h={200}>
-          <Text color={"#7F7F7F"}>All Rights</Text>
-        </Flex>
+        <Footer/>
 
     </>
   )
