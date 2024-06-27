@@ -16,7 +16,7 @@ const HomePage = () => {
           <Flex m={2} w={'full'} h={650} alignItems={'center'} justifyContent={'center'} px={10} flexDirection={'column'}>
               
               <Box py={10}>
-                <Text color={'brand.0'} fontSize={40} fontWeight={'10'} textAlign={"center"}>  <br/> Make Future Better </Text>
+                <Text color={'brand.0'} fontSize={40} fontWeight={'10'} textAlign={"center"}> Welcome. <br/> I'm Shehan Wijerathna </Text>
               </Box>
 
               <Box w={80}>
@@ -34,12 +34,6 @@ const HomePage = () => {
           <Text fontSize={25} my={5} ml={{base:0, md:20}} color={'brand.0'}>Projects</Text>
           <SimpleGrid columns={{base:1, md:3, sm:2}} spacing={5} mx={{base:0, md:55}}  gap={2} >
             <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-
           </SimpleGrid>
         </Flex>
 
