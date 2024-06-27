@@ -19,7 +19,7 @@ const BlogComponent = () => {
                           w={'full'}
                       /> */}
                       <Stack mt='6' spacing='3'>
-                          <Heading size='md' color={"brand.100"}>Android App Site Jotter</Heading>
+                          <Heading size='md' color={"brand.100"}>CPU Architectures</Heading>
                           <Text color={"brand.0"}>
                               This sofa is perfect for modern tropical spaces, baroque inspired
                               spaces, earthy toned spaces and for people who love a chic design with a
