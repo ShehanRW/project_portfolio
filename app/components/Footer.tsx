@@ -1,3 +1,4 @@
+'use client'
 import { Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import { MdFacebook } from "react-icons/md";
