@@ -4,6 +4,7 @@ import { Box, Flex, Text, SimpleGrid} from '@chakra-ui/react'
 import ProjectCard from '../components/ProjectCard'
 import ThreeScene from '../components/ThreeScene'
 import Footer from '../components/Footer'
+import LandingView from '../components/LandingView'
 
 const HomePage = () => {
   return (
@@ -12,23 +13,7 @@ const HomePage = () => {
 
       <Flex h={"60px"}></Flex>
       
-        <Flex flexDirection={'row'}>
-          <Flex m={2} w={'full'} h={650} alignItems={'center'} justifyContent={'center'} px={10} flexDirection={'column'}>
-              
-              <Box py={10}>
-                <Text color={'brand.0'} fontSize={40} fontWeight={'10'} textAlign={"center"}> Welcome. <br/> I'm Shehan Wijerathna </Text>
-              </Box>
-
-              <Box w={80}>
-                <Text color={'brand.200'} fontSize={20} fontWeight={'700'} textAlign={"center"}> ksahd ahkj fiasf hiuadoif aihdf kaldj hfakljdfh adfkla jfadjkfuage faakdf jakdfj adfffeeeeeee </Text>
-              </Box>
-
-          </Flex>
-          <Flex m={2} w={'full'} h={'auto'} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}} bg={'white'}>
-            
-          </Flex>
-          
-        </Flex>
+        <LandingView/>
 
         <Flex py={10} px={{base:10, md:0}} direction={'column'}>
           <Text fontSize={25} my={5} ml={{base:0, md:20}} color={'brand.0'}>Projects</Text>
