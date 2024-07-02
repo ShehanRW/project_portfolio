@@ -15,9 +15,9 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     const direct = () => {
-        window.location.href = project.projectLink;
+        window.open(project.projectLink, '_blank');
     };
-
+    
     return (
         <>
           <Flex border='2px solid #323232' _hover={{ border: '2px solid', borderColor: 'brand.200' }} onClick={direct} cursor={'pointer'}>
