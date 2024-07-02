@@ -56,13 +56,10 @@ const InputProjects = () => {
             <Text color={'brand.200'}>Add a project</Text>
             <Input placeholder='Project Title' size={'sm'} color={'brand.200'} borderRadius={'none'} value={projectTitle} onChange={(e) => setProjectTitle(e.target.value)}/>
             <Textarea placeholder='Description' size={'sm'} color={'brand.200'} borderRadius={'none'} value={projectDescription} onChange={(e) => setProjectDescription(e.target.value)}/>
-            <Textarea placeholder='Link' size={'sm'} color={'brand.200'} borderRadius={'none'} value={projectLink} onChange={(e) => setProjectLink(e.target.value)}/>
+            <Input placeholder='Link' size={'sm'} color={'brand.200'} borderRadius={'none'} value={projectLink} onChange={(e) => setProjectLink(e.target.value)}/>
 
             <Flex gap={1}>
-              <Button bg={'brand.200'} size={'sm'} borderRadius={'none'} w={200}>Select Project</Button>
               <Button bg={'brand.200'} size={'sm'} borderRadius={'none'} w={200} onClick={handleAddProject}>Save</Button>
-              <Button bg={'brand.200'} size={'sm'} borderRadius={'none'} w={200}>Edit</Button>
-              <Button bg={'brand.200'} size={'sm'} borderRadius={'none'} w={200}>Delete</Button>
             </Flex>
         </Flex>
     </>
