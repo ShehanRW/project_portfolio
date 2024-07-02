@@ -2,28 +2,31 @@
 import { Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
-const ProjectCard = () => {
-    const direct = ()=>{
-        window.location.href = '#';
-    };
+interface Project {
+    id: number;
+    projectTitle: string;
+    projectDescription: string;
+    projectLink: string;
+}
 
+interface ProjectCardProps {
+    project: Project;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+    const direct = () => {
+        window.open(project.projectLink, '_blank');
+    };
+    
     return (
         <>
-          <Flex border='2px solid #323232' _hover={{ border: '2px solid', borderColor: 'brand.200' }} onClick={direct}>
-              <Card maxW='full' cursor={'pointer'} bg={"brand.1000"} borderRadius={0}>
+          <Flex border='2px solid #323232' _hover={{ border: '2px solid', borderColor: 'brand.200' }} onClick={direct} cursor={'pointer'}>
+              <Card maxW='full'  bg={"brand.1000"} borderRadius={0}>
                   <CardBody >
-                      {/* <Image
-                          src='intro screen.jpg'
-                          alt='Site Jotter'
-                          h={300}
-                          w={'full'}
-                      /> */}
                       <Stack mt='6' spacing='3'>
-                          <Heading size='md' color={"brand.100"}>Android App Site Jotter</Heading>
+                          <Heading size='md' color={"brand.100"}>{project.projectTitle}</Heading>
                           <Text color={"brand.0"}>
-                              This sofa is perfect for modern tropical spaces, baroque inspired
-                              spaces, earthy toned spaces and for people who love a chic design with a
-                              sprinkle of vintage design.
+                            {project.projectDescription}
                           </Text>
                       </Stack>
                   </CardBody>
