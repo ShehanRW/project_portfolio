@@ -10,7 +10,7 @@ const LandingView = () => {
     useEffect(() => {
         const fetchStatus = async () => {
           try {
-            const response = await axios.get('http://localhost:8080/api/v1/getStatus');
+            const response = await axios.get('http://localhost:8080/api/v1/getstatus');
             if (response.data.length > 0) {
               setStatus(response.data[0]); 
             }
