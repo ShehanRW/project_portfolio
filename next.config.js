@@ -2,8 +2,8 @@
 const nextConfig = {
   transpilePackages: ['three'],
   output: 'export', // For GitHub Pages deployment
-  basePath: '/your-repo', // Replace with your repo name if deploying to a subfolder
-  assetPrefix: '/your-repo',
+  basePath: 'https://shehanrw.github.io/project_portfolio/', // Replace with your repo name if deploying to a subfolder
+  assetPrefix: 'https://shehanrw.github.io/project_portfolio/',
   async redirects() {
     return [
       {
