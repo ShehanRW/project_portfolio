@@ -1,17 +1,18 @@
 'use client'
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
+import { Mesh } from 'three';
 
 const RotatingBox = () => {
-  const myMesh = useRef(null);
+  const myMesh = useRef<Mesh>(null!);
 
-  // useFrame((state, delta) => {
-  //   if (myMesh.current) { // Add null check here
-  //     myMesh.current.rotation.x += delta * 0.1;
-  //     myMesh.current.rotation.y += delta * 0.1;
-  //     myMesh.current.rotation.z += delta * 0.1;
-  //   }
-  // });
+  useFrame((state, delta) => {
+    if (myMesh.current) { // Add null check here
+      myMesh.current.rotation.x += delta * 0.1;
+      myMesh.current.rotation.y += delta * 0.1;
+      myMesh.current.rotation.z += delta * 0.1;
+    }
+  });
 
   return (
     <mesh ref={myMesh}>

@@ -2,6 +2,7 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import ThreeScene from './ThreeScene'
 
 const LandingView = () => {
 
@@ -36,8 +37,9 @@ const LandingView = () => {
               </Box>
 
           </Flex>
-          <Flex m={2} w={'full'} h={'auto'} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}} bg={'white'}>
-            
+          
+          <Flex w={'full'}>
+            <ThreeScene/>
           </Flex>
           
         </Flex>
