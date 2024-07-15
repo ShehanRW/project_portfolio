@@ -2,11 +2,13 @@
   "name": "project_portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ShehanRW.github.io/ShehanWijerathna",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
@@ -32,6 +34,7 @@
     "typescript": "5.4.5"
   },
   "devDependencies": {
-    "@types/three": "^0.165.0"
+    "@types/three": "^0.165.0",
+    "gh-pages": "^6.1.1"
   }
 }
