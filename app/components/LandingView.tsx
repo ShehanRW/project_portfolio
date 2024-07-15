@@ -38,7 +38,7 @@ const LandingView = () => {
 
           </Flex>
 
-          <Flex m={2} w={'full'} h={'auto'} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}} bg={'black'}>
+          <Flex m={2} w={'full'} h={'auto'} alignItems={'center'} justifyContent={'center'} display={{base:'none', md:'block'}}>
             <ThreeScene/>  
           </Flex>
           
