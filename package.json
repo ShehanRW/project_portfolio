@@ -2,7 +2,7 @@
   "name": "project_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ShehanRW.github.io/ShehanWijerathna",
+  "homepage": "https://ShehanRW.github.io/ShehanWijerathna/home",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
