@@ -7,6 +7,8 @@ const nextConfig = {
           source: '/',
           destination: '/home',
           permanent: true,
+          basePath: '/project_portfolio/home',
+          assetPrefix: '/project_portfolio/home/',
         },
       ];
     },
