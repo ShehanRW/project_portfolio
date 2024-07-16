@@ -41,6 +41,7 @@ const ProfilePage = () => {
           <br/> C++
           <br/> MySQL
           <br/> Git and Github
+          <br/> Javascript
           <br/> 
           <br/> Contact me on Contact page.
 
