@@ -2,24 +2,30 @@
 import { Card, CardBody, Flex, Heading, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
-interface Blog {
+// interface Blog {
+//     id: number;
+//     blogTitle: string;
+//     blogDescription: string;
+//     blogLink: string;
+// }
+
+// interface BlogCardProps {
+//     blog: Blog | undefined;
+// }
+interface Blog{
     id: number;
-    blogTitle: string;
-    blogDescription: string;
-    blogLink: string;
+    title: string;
+    description: string;
+    link: string;
 }
 
-interface BlogCardProps {
-    blog: Blog | undefined;
-}
-
-const BlogComponent: React.FC<BlogCardProps> = ({ blog }) => {
-    if (!blog) {
-        return null; // or you can return a loading spinner or a placeholder
-    }
+const BlogComponent: React.FC<Blog> = ({ id, title, description, link }) => {
+    // if (!blog) {
+    //     return null; // or you can return a loading spinner or a placeholder
+    // }
 
     const direct = () => {
-        window.open(blog.blogLink, '_blank');
+        window.open(link, '_blank');
     };
 
     return (
@@ -27,9 +33,9 @@ const BlogComponent: React.FC<BlogCardProps> = ({ blog }) => {
             <Card maxW='full' cursor={'pointer'} bg={"brand.1000"} borderRadius={0}>
                 <CardBody >
                     <Stack mt='6' spacing='3'>
-                        <Heading size='md' color={"brand.100"}>{blog.blogTitle}</Heading>
+                        <Heading size='md' color={"brand.100"}>{title}</Heading>
                         <Text color={"brand.0"}>
-                            {blog.blogDescription}
+                            {description}
                         </Text>
                     </Stack>
                 </CardBody>
