@@ -6,22 +6,22 @@ import Footer from '../components/Footer';
 import axios from 'axios';
 
 const ProfilePage = () => {
-  const [status, setStatus] = useState({ title: '', bio: '' });
+  // const [status, setStatus] = useState({ title: '', bio: '' });
 
-  useEffect(() => {
-    const fetchStatus = async () => {
-      try {
-        const response = await axios.get('http://localhost:8080/api/v1/getstatus');
-        if (response.data.length > 0) {
-          setStatus(response.data[0]); 
-        }
-      } catch (error) {
-        console.error('Error fetching status:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchStatus = async () => {
+  //     try {
+  //       const response = await axios.get('http://localhost:8080/api/v1/getstatus');
+  //       if (response.data.length > 0) {
+  //         setStatus(response.data[0]); 
+  //       }
+  //     } catch (error) {
+  //       console.error('Error fetching status:', error);
+  //     }
+  //   };
 
-    fetchStatus();
-  }, []); 
+  //   fetchStatus();
+  // }, []); 
 
   return (
     <>
