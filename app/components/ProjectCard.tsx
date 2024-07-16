@@ -2,20 +2,32 @@
 import { Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
-interface Project {
+// interface Project {
+//     id: number;
+//     projectTitle: string;
+//     projectDescription: string;
+//     projectLink: string;
+// }
+
+// interface ProjectCardProps {
+//     project: Project;
+// }
+
+// const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+//     const direct = () => {
+//         window.open(project.projectLink, '_blank');
+//     };
+
+interface CardProps {
     id: number;
-    projectTitle: string;
-    projectDescription: string;
-    projectLink: string;
+    title: string;
+    description: string;
+    link: string;
 }
 
-interface ProjectCardProps {
-    project: Project;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<CardProps> = ({ id, title, description, link }) => {
     const direct = () => {
-        window.open(project.projectLink, '_blank');
+        window.open(link, '_blank');
     };
     
     return (
@@ -24,9 +36,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               <Card maxW='full'  bg={"brand.1000"} borderRadius={0}>
                   <CardBody >
                       <Stack mt='6' spacing='3'>
-                          <Heading size='md' color={"brand.100"}>{project.projectTitle}</Heading>
+                          <Heading size='md' color={"brand.100"}>{title}</Heading>  {/* {project.projectTitle} */}
                           <Text color={"brand.0"}>
-                            {project.projectDescription}
+                             {description}{/* {project.projectDescription} */}
                           </Text>
                       </Stack>
                   </CardBody>
