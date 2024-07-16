@@ -21,7 +21,7 @@ const HeaderAppBar = () => {
       <Flex h={'15ig'} w={'full'} bg={'brand.900'} position={'fixed'} gap={1} flex={1} zIndex={1}>
 
         <Flex  alignItems={'center'} cursor={'pointer'} _hover={{ color: 'brand.0' }}>
-          <ChakraLink href='/' bg={'brand.50'} fontWeight={'700'} fontSize={30} p={2} style={{ textDecoration:'none' }}>
+          <ChakraLink href='/home' bg={'brand.50'} fontWeight={'700'} fontSize={30} p={2} style={{ textDecoration:'none' }}>
             SW
           </ChakraLink>
         </Flex>
