@@ -21,6 +21,6 @@
         "id": 4,
         "title": "The Portfolio",
         "description": "This portfolio website is a project that I have contributed to do most attractive and suitable design as well as technologies that I could use as a Software Egineer Student. This website has been deployed on Github pages with using Github Actions for CI CD that I can change, upgrade, and improve by pushing. Technologies = Next JS, Three JS, Chakra UI, Json, Typescript, Tailwind CSS, Github Actions, Developing backend part with Java Springboot.",
-        "link": "#"
+        "link": "/"
       }
 ]

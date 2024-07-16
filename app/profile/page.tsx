@@ -36,14 +36,14 @@ const ProfilePage = () => {
           <Text color={'brand.200'} fontSize={{ base: 40, md: 50 }} fontWeight={10}>Shehan Wijerathna</Text>
           <Text color={'brand.200'} fontSize={15} fontWeight={500} ml={5}>Software Engineering Reading Bachelors BSE</Text> {/* {status.title} */}
           <Text color={'brand.200'} fontSize={20} fontWeight={10} m={5} w={80}>I am great at following technical skills. Rather than that lerning new things makes me happy. I am also good at drawings art and sketching but don't like to showcase as well as I have skills on 3D designing. The field of IT gives me inspiration of improvement.
-          <br/>
-          <br/> Java
-          <br/> C++
-          <br/> MySQL
-          <br/> Git and Github
-          <br/> Javascript
-          <br/> 
-          <br/> Contact me on Contact page.
+          
+           Java
+           C++
+           MySQL
+           Git and Github
+           Javascript
+           
+           Contact me on Contact page.
 
           </Text> {/* {status.bio} */}
         </Flex>
