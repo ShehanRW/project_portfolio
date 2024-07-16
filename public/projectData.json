@@ -1,14 +1,26 @@
 [
     {
         "id": 1,
-        "title": "Project 1",
-        "description": "Description for Project 1",
-        "link": "http://example.com/project1"
+        "title": "Splendy The event management mobile app.",
+        "description": "The university 4 member group project that proposed solution to develop a mobile application that facilitates event management aiming to streamline the process of organizing, scheduling, and participating in various events within the community. The application will provide a user-friendly interface and offer a comprehensive set of features to meet the diverse needs of both individual users and organizations. Technologies = Java, Android studio, Firebase authentication and realtime database",
+        "link": "https://github.com/ShehanRW/Splendy-the-event-management-app"
       },
       {
         "id": 2,
-        "title": "Project 2",
-        "description": "Description for Project 2",
-        "link": "http://example.com/project2"
+        "title": "Perpetrator Management System.",
+        "description": "The solution for manage data of perpetrators attend to the frame of law with comprehensive controlled desktop application. The application provides CRUD operations control and make previlages on employees as well as controlled secured UI design with authentication. Technologies = Java, Swing UI, MySQL",
+        "link": "https://github.com/ShehanRW/Perpetrator_Manangement_System"
+      },
+      {
+        "id": 3,
+        "title": "Site Jotter mobile app.",
+        "description": "The project of university individual final project of module Mobile Application Development. The main scope is educational tool which had features to gather information and manage. The final product app will use for the education purposes, and it is defined as a tool for make easy and efficient the tasks specified in the felid of education. Technologies = Java, Android studio, SQLlite",
+        "link": "https://github.com/ShehanRW/EEI4369_FinalProject"
+      },
+      {
+        "id": 4,
+        "title": "The Portfolio",
+        "description": "This portfolio website is a project that I have contributed to do most attractive and suitable design as well as technologies that I could use as a Software Egineer Student. This website has been deployed on Github pages with using Github Actions for CI CD that I can change, upgrade, and improve by pushing. Technologies = Next JS, Three JS, Chakra UI, Json, Typescript, Tailwind CSS, Github Actions, Developing backend part with Java Springboot.",
+        "link": "https://github.com/ShehanRW/Perpetrator_Manangement_System"
       }
 ]

@@ -1,14 +1,8 @@
 [
     {
         "id": 1,
-        "title": "Blog 1",
-        "description": "Description for Blog 1",
-        "link": "http://example.com/blog1"
-      },
-      {
-        "id": 2,
-        "title": "Blog 2",
-        "description": "Description for Blog 2",
-        "link": "http://example.com/blog2"
+        "title": "The Object Oriented Programming",
+        "description": "Brief explain with easy understandable diagrams of Object Oriented Programming and its principals.",
+        "link": "https://personalcreations99.blogspot.com/2022/11/easy-to-understand-oopconcepts.html"
       }
 ]
