@@ -27,23 +27,23 @@ const ProfilePage = () => {
     <>
       <HeaderAppBar />
       <Flex h={"60px"}></Flex>
-      <Flex direction={{ base: 'column', md: 'row' }}>
+      <Flex direction={{ base: "column", md: "row" }}>
         <Box mx={5}>
-          <Image src='profile_pic.jpg' alt='profile_pic' w={{ base: 'auto', md: 800 }} />
+          <Image src="profile_pic.jpg" alt="profile_pic" w={{ base: "auto", md: 800 }} />
         </Box>
 
-        <Flex direction={'column'} m={10}>
-          <Text color={'brand.200'} fontSize={{ base: 40, md: 50 }} fontWeight={10}>Shehan Wijerathna</Text>
-          <Text color={'brand.200'} fontSize={15} fontWeight={500} ml={5}>Software Engineering Reading Bachelors BSE</Text> {/* {status.title} */}
-          <Text color={'brand.200'} fontSize={20} fontWeight={10} m={5} w={80}>I am great at following technical skills. Rather than that lerning new things makes me happy. I am also good at drawings art and sketching but don't like to showcase as well as I have skills on 3D designing. The field of IT gives me inspiration of improvement.
-          
-           Java
-           C++
-           MySQL
-           Git and Github
-           Javascript
-           
-           Contact me on Contact page.
+        <Flex direction={"column"} m={10}>
+          <Text color={"brand.200"} fontSize={{ base: 40, md: 50 }} fontWeight={10}>Shehan Wijerathna</Text>
+          <Text color={"brand.200"} fontSize={15} fontWeight={500} ml={5}>Software Engineering Reading Bachelors BSE</Text> {/* {status.title} */}
+          <Text color={"brand.200"} fontSize={20} fontWeight={10} m={5} w={80}>I am great at following technical skills. Rather than that lerning new things makes me happy. I am also good at drawings art and sketching but don't like to showcase as well as I have skills on 3D designing. The field of IT gives me inspiration of improvement.
+          <br/>
+          <br/> Java
+          <br/> C++
+          <br/> MySQL
+          <br/> Git and Github
+          <br/> Javascript
+          <br/> 
+          <br/> Contact me on Contact page.
 
           </Text> {/* {status.bio} */}
         </Flex>
