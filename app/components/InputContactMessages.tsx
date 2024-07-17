@@ -3,6 +3,7 @@
 import { Button, Flex, Input, Textarea, useToast } from '@chakra-ui/react'
 import axios from 'axios';
 import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
 
 const InputContactMessages = () => {
 
@@ -14,13 +15,27 @@ const InputContactMessages = () => {
     const handleAddMessage = async () => {
         if(email!==""&& description!==""){
         try {
-            const response = await axios.post('http://localhost:8080/api/v1/addmessage', {
-                email,
-                description
-            });
+            // const response = await axios.post('http://localhost:8080/api/v1/addmessage', {
+            //     email,
+            //     description
+            // });
+
+            const templateParams = {
+                from_email: email,
+                description: description,
+              };
+          
+              emailjs
+                .send(
+                  'service_5jzdxb8',
+                  'template_o52kfzy',
+                  templateParams,
+                  '17-LB8BGaWlTXGznS'
+                );
+
             setEmail("");
             setDescription("");
-            console.log('Message added:', response.data);
+            // console.log('Message added:', response.data);
             toast({
             title: "Message added.",
             description: "I will contact you in shortly.",
