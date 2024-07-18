@@ -12,6 +12,10 @@ const InputContactMessages = () => {
 
     const toast = useToast();
 
+    const linkCV = () => {
+      window.open("https://drive.google.com/file/d/1_3sfdZmoomzpTXxyw7-n_TGQD3Z9VIRb/view?usp=sharing", '_blank');
+    }
+
     const handleAddMessage = async () => {
         if(email!==""&& description!==""){
         try {
@@ -71,7 +75,7 @@ const InputContactMessages = () => {
             <Input placeholder='E-mail' variant='flushed' color={'brand.100'} borderBottom={"solid 2px"} borderColor={'brand.200'}  value={email} onChange={(e) => setEmail(e.target.value)}/>
             <Textarea placeholder='Description' color={'brand.100'} borderRadius={0} border={"solid 2px"} borderColor={'brand.200'} value={description} onChange={(e) => setDescription(e.target.value)}/>
             <Button mx={{base:0, md:200}} borderRadius={'none'} bg={'brand.200'} onClick={handleAddMessage}>Submit</Button>
-            <Button mx={{base:0, md:200}} my={10} borderRadius={'none'} bg={'brand.200'}>Download Resume</Button>
+            <Button mx={{base:0, md:200}} my={10} borderRadius={'none'} bg={'brand.200'} onClick={linkCV}>Download Resume</Button>
         </Flex>
     </>
   )
