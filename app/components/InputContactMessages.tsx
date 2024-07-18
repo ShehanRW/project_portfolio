@@ -13,7 +13,7 @@ const InputContactMessages = () => {
     const toast = useToast();
 
     const linkCV = () => {
-      window.open("https://drive.google.com/file/d/1_3sfdZmoomzpTXxyw7-n_TGQD3Z9VIRb/view?usp=sharing", '_blank');
+      window.open("https://drive.google.com/file/d/1hBVMR_U9zXDDjChHMMy_uaod11zBF2cH/view?usp=sharing", '_blank');
     }
 
     const handleAddMessage = async () => {
